@@ -1,0 +1,64 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "AutoTimeSetDay",
+      "type": "gamerule",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "autoTimeSetDay",
+      "metadata": {
+        "type": "boolean"
+      }
+    },
+    {
+      "name": "AutoTimeSetDayProcedure",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_time_set_day_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gamerule.autoTimeSetDay": "Auto /time set day",
+      "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "moreutilities",
+    "modName": "MoreUtilities",
+    "version": "1.0.0",
+    "author": "Anton Rosin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "ru.ardev.moreutilities",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

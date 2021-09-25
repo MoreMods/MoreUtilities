@@ -1,0 +1,4 @@
+{
+  "gamerule.autoTimeSetDay": "Auto /time set day",
+  "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day"
+}

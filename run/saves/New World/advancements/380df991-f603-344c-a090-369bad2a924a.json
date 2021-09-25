@@ -1,0 +1,12 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:badlands_plateau": "2021-09-25 13:14:21 +0300",
+      "minecraft:desert": "2021-09-25 13:11:32 +0300",
+      "minecraft:badlands": "2021-09-25 13:11:52 +0300",
+      "minecraft:plains": "2021-09-25 13:11:05 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

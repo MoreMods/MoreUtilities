@@ -1,0 +1,61 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "AutoTimeSetDay",
+      "type": "gamerule",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "autoTimeSetDay",
+      "metadata": {
+        "type": "boolean"
+      }
+    },
+    {
+      "name": "AutoTimeSetDayCooldown",
+      "type": "gamerule",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "autoTimeSetDayCooldown",
+      "metadata": {
+        "type": "number"
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gamerule.autoTimeSetDayCooldown.description": "Auto /time set day colldown (In milliseconds, working only if autoTimeSetDay is true)",
+      "gamerule.autoTimeSetDay": "Auto /time set day",
+      "gamerule.autoTimeSetDayCooldown": "Cooldown for auto /time set day",
+      "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "moreutilities",
+    "modName": "MoreUtilities",
+    "version": "1.0.0",
+    "author": "Anton Rosin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "ru.ardev.moreutilities",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
