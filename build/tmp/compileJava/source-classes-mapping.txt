@@ -9,3 +9,8 @@ ru/ardev/moreutilities/MoreutilitiesMod.java
  ru.ardev.moreutilities.MoreutilitiesMod$MoreutilitiesModFMLBusEvents
 ru/ardev/moreutilities/procedures/AutoTimeSetDayProcedureProcedure.java
  ru.ardev.moreutilities.procedures.AutoTimeSetDayProcedureProcedure
+ru/ardev/moreutilities/procedures/TimeSetDayProcedureProcedure.java
+ ru.ardev.moreutilities.procedures.TimeSetDayProcedureProcedure
+ru/ardev/moreutilities/keybind/TimeSetDayKeyKeyBinding.java
+ ru.ardev.moreutilities.keybind.TimeSetDayKeyKeyBinding
+ ru.ardev.moreutilities.keybind.TimeSetDayKeyKeyBinding$KeyBindingPressedMessage

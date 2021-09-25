@@ -38,23 +38,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "time_set_day_key"
-    },
-    {
-      "name": "TimeSetDayProcedure",
-      "type": "procedure",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "time_set_day_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],

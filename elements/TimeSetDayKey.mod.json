@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "BACKSLASH",
+    "keyBindingName": "Time set day",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TimeSetDayProcedure"
+    }
+  }
+}
