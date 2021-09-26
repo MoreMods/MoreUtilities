@@ -29,6 +29,32 @@
           }
         ]
       }
+    },
+    {
+      "name": "TimeSetDayKey",
+      "type": "keybind",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "time_set_day_key"
+    },
+    {
+      "name": "TimeSetDayProcedure",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "time_set_day_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -36,7 +62,8 @@
   "language_map": {
     "en_us": {
       "gamerule.autoTimeSetDay": "Auto /time set day",
-      "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day"
+      "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day",
+      "key.moreutilities.time_set_day_key": "Time set day"
     }
   },
   "foldersRoot": {

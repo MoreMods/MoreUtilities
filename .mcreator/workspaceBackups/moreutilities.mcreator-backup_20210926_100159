@@ -14,18 +14,6 @@
       }
     },
     {
-      "name": "AutoTimeSetDayCooldown",
-      "type": "gamerule",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "autoTimeSetDayCooldown",
-      "metadata": {
-        "type": "number"
-      }
-    },
-    {
       "name": "AutoTimeSetDayProcedure",
       "type": "procedure",
       "sortid": 3,
@@ -41,16 +29,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "TimeSetDayKey",
+      "type": "keybind",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "time_set_day_key"
+    },
+    {
+      "name": "TimeSetDayProcedure",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "time_set_day_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearDropProcedure",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "clear_drop_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "gamerule.autoTimeSetDayCooldown.description": "Auto /time set day colldown (In milliseconds, working only if autoTimeSetDay is true)",
       "gamerule.autoTimeSetDay": "Auto /time set day",
-      "gamerule.autoTimeSetDayCooldown": "Cooldown for auto /time set day",
-      "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day"
+      "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day",
+      "key.moreutilities.time_set_day_key": "Time set day"
     }
   },
   "foldersRoot": {

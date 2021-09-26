@@ -75,14 +75,14 @@ Loading mappings... 40%
 Loading mappings... 50%
 0 packages, 5447 classes, 21481 fields, 38359 methods
 Remapping final jar
-Remapping jar...  4%
-Remapping jar... 11%
+Remapping jar...  3%
+Remapping jar... 12%
 Remapping jar... 21%
 Remapping jar... 32%
-Remapping jar... 43%
+Remapping jar... 41%
 Remapping jar... 50%
-Remapping jar... 61%
+Remapping jar... 62%
 Remapping jar... 71%
 Remapping jar... 82%
-Remapping jar... 93%
+Remapping jar... 91%
 Remapping jar... 100%

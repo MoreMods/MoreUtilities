@@ -1,5 +1,8 @@
 {
+  "gamerule.clearDropLightningEffect.description": "If true, then when using /cleardrop command, a lightning effect appears.",
   "gamerule.autoTimeSetDay": "Auto /time set day",
+  "key.moreutilities.clear_drop_key": "Clear drop",
+  "gamerule.clearDropLightningEffect": "Clear drop lightning effect",
   "gamerule.autoTimeSetDay.description": "Automaticly sets game time to day",
   "key.moreutilities.time_set_day_key": "Time set day"
 }

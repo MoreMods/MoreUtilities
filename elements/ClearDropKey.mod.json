@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "ADD",
+    "keyBindingName": "Clear drop",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ClearDropProcedure"
+    }
+  }
+}
