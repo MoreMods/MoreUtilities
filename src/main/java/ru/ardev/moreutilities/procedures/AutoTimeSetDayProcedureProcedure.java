@@ -28,8 +28,7 @@ public class AutoTimeSetDayProcedureProcedure extends MoreutilitiesModElements.M
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((world.getWorldInfo().getGameRulesInstance().getBoolean(AutoTimeSetDayGameRule.gamerule)) == (true))
-				&& ((world.getWorldInfo().getDayTime()) != 1000))) {
+		if (((world.getWorldInfo().getGameRulesInstance().getBoolean(AutoTimeSetDayGameRule.gamerule)) == (true))) {
 			if (world instanceof ServerWorld)
 				((ServerWorld) world).setDayTime((int) 1000);
 		}

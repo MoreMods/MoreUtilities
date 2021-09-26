@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="moreutilities"
-version="1.0.0"
+version="v0-0-beta b1"
 displayName="MoreUtilities"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="More Mods, Anton Rosin Dev."
 displayURL="https://mcreator.net"
-authors="Anton Rosin, MCreator"
+authors="More Mods, Anton Rosin Dev."
 
 [[dependencies.moreutilities]]
     modId="minecraft"

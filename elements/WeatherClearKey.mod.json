@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "MINUS",
+    "keyBindingName": "Weather clear",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "WeatherClearProcedure"
+    }
+  }
+}

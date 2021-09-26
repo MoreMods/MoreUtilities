@@ -4,8 +4,8 @@
   "definition": {
     "type": "Logic",
     "displayName": "Clear drop lightning effect",
-    "description": "If true, then when using /cleardrop command, a lightning effect appears.",
-    "category": "PLAYER",
+    "description": "If true, then when using /cleardrop command, a lightning effect appears",
+    "category": "MISC",
     "defaultValueLogic": true,
     "defaultValueNumber": 0
   }

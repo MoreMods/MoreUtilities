@@ -4,7 +4,7 @@
   "definition": {
     "type": "Logic",
     "displayName": "Auto /time set day",
-    "description": "Automaticly sets game time to day",
+    "description": "Automaticaly sets game time to day (1000)",
     "category": "MISC",
     "defaultValueLogic": false,
     "defaultValueNumber": 0

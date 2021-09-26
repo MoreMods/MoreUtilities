@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Auto /weather clear",
+    "description": "Automaticaly sets weather to clear (sun)",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}
