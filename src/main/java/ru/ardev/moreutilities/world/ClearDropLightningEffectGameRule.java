@@ -12,6 +12,7 @@ import java.lang.reflect.Method;
 public class ClearDropLightningEffectGameRule extends MoreutilitiesModElements.ModElement {
 	public static final GameRules.RuleKey<GameRules.BooleanValue> gamerule = GameRules.register("clearDropLightningEffect", GameRules.Category.MISC,
 			create(true));
+
 	public ClearDropLightningEffectGameRule(MoreutilitiesModElements instance) {
 		super(instance, 8);
 	}

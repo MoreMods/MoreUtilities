@@ -1,11 +1,9 @@
 {
-  "_fv": 18,
+  "_fv": 34,
   "_type": "command",
   "definition": {
     "commandName": "cleardrop",
     "permissionLevel": "No requirement",
-    "onCommandExecuted": {
-      "name": "ClearDropProcedure"
-    }
+    "argsxml": "<xml><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"old_command\"><field name=\"procedure\">ClearDropProcedure</field></block></next></block></xml>"
   }
 }

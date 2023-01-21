@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "AutoTimeSetDay",
@@ -7,10 +6,9 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "autoTimeSetDay",
       "metadata": {
-        "type": "boolean"
+        "type": "logic"
       }
     },
     {
@@ -19,7 +17,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "auto_time_set_day_procedure",
       "metadata": {
         "dependencies": [
@@ -36,7 +33,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "time_set_day_key"
     },
     {
@@ -45,7 +41,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "time_set_day_procedure",
       "metadata": {
         "dependencies": [
@@ -62,7 +57,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "clear_drop_procedure",
       "metadata": {
         "dependencies": [
@@ -83,7 +77,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "clear_drop"
     },
     {
@@ -92,7 +85,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "clear_drop_key"
     },
     {
@@ -101,10 +93,9 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "clearDropLightningEffect",
       "metadata": {
-        "type": "boolean"
+        "type": "logic"
       }
     },
     {
@@ -113,10 +104,9 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "autoWeatherClear",
       "metadata": {
-        "type": "boolean"
+        "type": "logic"
       }
     },
     {
@@ -125,7 +115,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "auto_weather_clear_procedure",
       "metadata": {
         "dependencies": [
@@ -142,7 +131,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weather_clear_procedure",
       "metadata": {
         "dependencies": [
@@ -171,7 +159,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "weather_clear_key"
     },
     {
@@ -180,7 +167,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "auto_weather_clear_on_off_command"
     },
     {
@@ -189,7 +175,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "auto_time_set_day_on_off_command"
     },
     {
@@ -198,7 +183,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "auto_weather_clear_on_off_procedure",
       "metadata": {
         "dependencies": [
@@ -219,7 +203,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "auto_time_set_day_on_off_procedure",
       "metadata": {
         "dependencies": [
@@ -239,22 +222,23 @@
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "gamerule.clearDropLightningEffect.description": "Если true, то при использовании команды /cleardrop, появляется эффект молнии",
-      "gamerule.autoTimeSetDay": "Авто /time set day",
-      "key.moreutilities.clear_drop_key": "Очистка дропа",
-      "gamerule.clearDropLightningEffect": "Эффект молнии при очистке дропа",
-      "gamerule.autoTimeSetDay.description": "Если true, то автоматически устанавливает время на день (1000)",
-      "key.moreutilities.time_set_day_key": "Установка времени на день (1000)",
-      "gamerule.autoWeatherClear.description": "Если true, то автоматически устанавливает погоду на солнечно (clear)",
-      "key.moreutilities.weather_clear_key": "Установка погоды на солнечно (clear)",
-      "gamerule.autoWeatherClear": "Авто /weather clear"
+      "gamerule.clearDropLightningEffect.description": "Р•СЃР»Рё  true, С‚Рѕ РїСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё РєРѕРјР°РЅРґС‹ /cleardrop, РїРѕСЏРІР»СЏРµС‚СЃСЏ СЌС„С„РµРєС‚ РјРѕР»РЅРёРё",
+      "gamerule.autoTimeSetDay": "РђРІС‚Рѕ /time set day",
+      "key.moreutilities.clear_drop_key": "Clear drop",
+      "gamerule.clearDropLightningEffect": "Р­С„С„РµРєС‚ РјРѕР»РЅРёРё РїСЂРё РѕС‡РёСЃС‚РєРµ РґСЂРѕРїР°",
+      "key.moreutilities.clear_drop_keyРћС‡РёС‚СЃС‚Рё": "РћС‡РёСЃС‚РєР° РґСЂРѕРїР°",
+      "gamerule.autoTimeSetDay.description": "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РёРіСЂРѕРІРѕРµ РІСЂРµРјСЏ РІ РґРµРЅСЊ (1000)",
+      "key.moreutilities.time_set_day_key": "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РёРіСЂРѕРІРѕРµ РІСЂРµРјСЏ РІ РґРµРЅСЊ (1000)",
+      "gamerule.autoWeatherClear.description": "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РїРѕРіРѕРґСѓ РЅР° СЏСЃРЅСѓСЋ (clear)",
+      "key.moreutilities.weather_clear_key": "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїРѕРіРѕРґСѓ РЅР° СЏСЃРЅСѓСЋ (clear)",
+      "gamerule.autoWeatherClear": "РђРІС‚Рѕ /weather clear"
     },
     "en_us": {
       "gamerule.clearDropLightningEffect.description": "If true, then when using /cleardrop command, a lightning effect appears",
       "gamerule.autoTimeSetDay": "Auto /time set day",
       "key.moreutilities.clear_drop_key": "Clear drop",
       "gamerule.clearDropLightningEffect": "Clear drop lightning effect",
-      "gamerule.autoTimeSetDay.description": "If true, automaticaly sets game time to day (1000)",
+      "gamerule.autoTimeSetDay.description": "Automaticaly sets game time to day (1000)",
       "key.moreutilities.time_set_day_key": "Time set day",
       "gamerule.autoWeatherClear.description": "Automaticaly sets weather to clear (sun)",
       "key.moreutilities.weather_clear_key": "Weather clear",
@@ -268,8 +252,10 @@
   "workspaceSettings": {
     "modid": "moreutilities",
     "modName": "MoreUtilities",
-    "version": "v0-0-beta b1",
+    "version": "1.0.0-1.16.5",
+    "description": "Utility mod for Minecraft: Java Edition. Developed by rorosin",
     "author": "More Mods, Anton Rosin Dev.",
+    "websiteURL": "https://github.com/MoreMods/MoreUtilities",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -282,5 +268,5 @@
     "modElementsPackage": "ru.ardev.moreutilities",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202200348217
 }

@@ -12,6 +12,7 @@ import java.lang.reflect.Method;
 public class AutoWeatherClearGameRule extends MoreutilitiesModElements.ModElement {
 	public static final GameRules.RuleKey<GameRules.BooleanValue> gamerule = GameRules.register("autoWeatherClear", GameRules.Category.MISC,
 			create(false));
+
 	public AutoWeatherClearGameRule(MoreutilitiesModElements instance) {
 		super(instance, 9);
 	}

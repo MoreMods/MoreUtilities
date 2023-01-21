@@ -1,7 +1,6 @@
 package ru.ardev.moreutilities.procedures;
 
 import ru.ardev.moreutilities.world.ClearDropLightningEffectGameRule;
-import ru.ardev.moreutilities.MoreutilitiesModElements;
 import ru.ardev.moreutilities.MoreutilitiesMod;
 
 import net.minecraft.world.server.ServerWorld;
@@ -22,25 +21,21 @@ import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
 
-@MoreutilitiesModElements.ModElement.Tag
-public class ClearDropProcedureProcedure extends MoreutilitiesModElements.ModElement {
-	public ClearDropProcedureProcedure(MoreutilitiesModElements instance) {
-		super(instance, 6);
-	}
+public class ClearDropProcedureProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				MoreutilitiesMod.LOGGER.warn("Failed to load dependency entity for procedure ClearDropProcedure!");
-			return;
-		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				MoreutilitiesMod.LOGGER.warn("Failed to load dependency world for procedure ClearDropProcedure!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				MoreutilitiesMod.LOGGER.warn("Failed to load dependency entity for procedure ClearDropProcedure!");
+			return;
+		}
 		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
 		if (world instanceof ServerWorld) {
 			((World) world).getServer().getCommandManager().handleCommand(
 					new CommandSource(ICommandSource.DUMMY, new Vector3d((entity.getPosX()), (entity.getPosY()), (entity.getPosZ())), Vector2f.ZERO,
@@ -50,11 +45,11 @@ public class ClearDropProcedureProcedure extends MoreutilitiesModElements.ModEle
 		{
 			List<? extends PlayerEntity> _players = new ArrayList<>(world.getPlayers());
 			for (Entity entityiterator : _players) {
-				if (((world.getWorldInfo().getGameRulesInstance().getBoolean(ClearDropLightningEffectGameRule.gamerule)) == (true))) {
+				if (world.getWorldInfo().getGameRulesInstance().getBoolean(ClearDropLightningEffectGameRule.gamerule) == true) {
 					if (world instanceof ServerWorld) {
 						LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
 						_ent.moveForced(Vector3d.copyCenteredHorizontally(
-								new BlockPos((int) (entityiterator.getPosX()), (int) (entityiterator.getPosY()), (int) (entityiterator.getPosZ()))));
+								new BlockPos(entityiterator.getPosX(), entityiterator.getPosY(), entityiterator.getPosZ())));
 						_ent.setEffectOnly(true);
 						((World) world).addEntity(_ent);
 					}

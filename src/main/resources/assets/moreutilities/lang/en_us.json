@@ -3,7 +3,7 @@
   "gamerule.autoTimeSetDay": "Auto /time set day",
   "key.moreutilities.clear_drop_key": "Clear drop",
   "gamerule.clearDropLightningEffect": "Clear drop lightning effect",
-  "gamerule.autoTimeSetDay.description": "If true, automaticaly sets game time to day (1000)",
+  "gamerule.autoTimeSetDay.description": "Automaticaly sets game time to day (1000)",
   "key.moreutilities.time_set_day_key": "Time set day",
   "gamerule.autoWeatherClear.description": "Automaticaly sets weather to clear (sun)",
   "key.moreutilities.weather_clear_key": "Weather clear",

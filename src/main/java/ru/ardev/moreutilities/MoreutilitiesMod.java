@@ -46,6 +46,7 @@ public class MoreutilitiesMod {
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("moreutilities", "moreutilities"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public MoreutilitiesModElements elements;
+
 	public MoreutilitiesMod() {
 		elements = new MoreutilitiesModElements();
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -86,8 +87,10 @@ public class MoreutilitiesMod {
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
 		elements.registerSounds(event);
 	}
+
 	private static class MoreutilitiesModFMLBusEvents {
 		private final MoreutilitiesMod parent;
+
 		MoreutilitiesModFMLBusEvents(MoreutilitiesMod parent) {
 			this.parent = parent;
 		}

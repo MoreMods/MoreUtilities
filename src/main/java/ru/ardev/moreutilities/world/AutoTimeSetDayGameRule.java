@@ -12,6 +12,7 @@ import java.lang.reflect.Method;
 public class AutoTimeSetDayGameRule extends MoreutilitiesModElements.ModElement {
 	public static final GameRules.RuleKey<GameRules.BooleanValue> gamerule = GameRules.register("autoTimeSetDay", GameRules.Category.MISC,
 			create(false));
+
 	public AutoTimeSetDayGameRule(MoreutilitiesModElements instance) {
 		super(instance, 1);
 	}

@@ -4,11 +4,14 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="moreutilities"
-version="v0-0-beta b1"
+version="1.0.01.16.5"
 displayName="MoreUtilities"
 credits="More Mods, Anton Rosin Dev."
-displayURL="https://mcreator.net"
+displayURL="https://github.com/MoreMods/MoreUtilities"
 authors="More Mods, Anton Rosin Dev."
+description='''
+Utility mod for Minecraft: Java Edition. Developed by rorosin
+'''
 
 [[dependencies.moreutilities]]
     modId="minecraft"
