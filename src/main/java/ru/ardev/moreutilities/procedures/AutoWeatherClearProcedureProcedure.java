@@ -1,52 +1,40 @@
 package ru.ardev.moreutilities.procedures;
 
-import ru.ardev.moreutilities.world.AutoWeatherClearGameRule;
-import ru.ardev.moreutilities.MoreutilitiesMod;
+import ru.ardev.moreutilities.init.MoreutilitiesModGameRules;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.math.vector.Vector2f;
-import net.minecraft.command.ICommandSource;
-import net.minecraft.command.CommandSource;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
-import java.util.Map;
-import java.util.HashMap;
+import javax.annotation.Nullable;
 
+@Mod.EventBusSubscriber
 public class AutoWeatherClearProcedureProcedure {
-	@Mod.EventBusSubscriber
-	private static class GlobalTrigger {
-		@SubscribeEvent
-		public static void onWorldTick(TickEvent.WorldTickEvent event) {
-			if (event.phase == TickEvent.Phase.END) {
-				IWorld world = event.world;
-				Map<String, Object> dependencies = new HashMap<>();
-				dependencies.put("world", world);
-				dependencies.put("event", event);
-				executeProcedure(dependencies);
-			}
+	@SubscribeEvent
+	public static void onWorldTick(TickEvent.LevelTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			execute(event, event.level);
 		}
 	}
 
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				MoreutilitiesMod.LOGGER.warn("Failed to load dependency world for procedure AutoWeatherClearProcedure!");
-			return;
-		}
-		IWorld world = (IWorld) dependencies.get("world");
-		if (world.getWorldInfo().getGameRulesInstance().getBoolean(AutoWeatherClearGameRule.gamerule) == true) {
-			if (world instanceof ServerWorld) {
-				((World) world).getServer().getCommandManager()
-						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(0, 0, 0), Vector2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(), "weather clear");
-			}
+	public static void execute(LevelAccessor world) {
+		execute(null, world);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world) {
+		if (world.getLevelData().getGameRules().getBoolean(MoreutilitiesModGameRules.AUTOWEATHERCLEAR) == true) {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(0, 0, 0), Vec2.ZERO,
+						_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "weather clear");
 		}
 	}
 }

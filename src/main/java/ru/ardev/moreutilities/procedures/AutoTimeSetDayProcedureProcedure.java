@@ -1,43 +1,34 @@
 package ru.ardev.moreutilities.procedures;
 
-import ru.ardev.moreutilities.world.AutoTimeSetDayGameRule;
-import ru.ardev.moreutilities.MoreutilitiesMod;
+import ru.ardev.moreutilities.init.MoreutilitiesModGameRules;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.IWorld;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
 
-import java.util.Map;
-import java.util.HashMap;
+import javax.annotation.Nullable;
 
+@Mod.EventBusSubscriber
 public class AutoTimeSetDayProcedureProcedure {
-	@Mod.EventBusSubscriber
-	private static class GlobalTrigger {
-		@SubscribeEvent
-		public static void onWorldTick(TickEvent.WorldTickEvent event) {
-			if (event.phase == TickEvent.Phase.END) {
-				IWorld world = event.world;
-				Map<String, Object> dependencies = new HashMap<>();
-				dependencies.put("world", world);
-				dependencies.put("event", event);
-				executeProcedure(dependencies);
-			}
+	@SubscribeEvent
+	public static void onWorldTick(TickEvent.LevelTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			execute(event, event.level);
 		}
 	}
 
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				MoreutilitiesMod.LOGGER.warn("Failed to load dependency world for procedure AutoTimeSetDayProcedure!");
-			return;
-		}
-		IWorld world = (IWorld) dependencies.get("world");
-		if (world.getWorldInfo().getGameRulesInstance().getBoolean(AutoTimeSetDayGameRule.gamerule) == true) {
-			if (world instanceof ServerWorld)
-				((ServerWorld) world).setDayTime((int) 1000);
+	public static void execute(LevelAccessor world) {
+		execute(null, world);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world) {
+		if (world.getLevelData().getGameRules().getBoolean(MoreutilitiesModGameRules.AUTOTIMESETDAY) == true) {
+			if (world instanceof ServerLevel _level)
+				_level.setDayTime(1000);
 		}
 	}
 }

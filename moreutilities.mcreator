@@ -222,11 +222,10 @@
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "gamerule.clearDropLightningEffect.description": "Если  true, то при использовании команды /cleardrop, появляется эффект молнии",
+      "gamerule.clearDropLightningEffect.description": "Если true, то при использовании команды /cleardrop, появляется эффект молнии",
       "gamerule.autoTimeSetDay": "Авто /time set day",
-      "key.moreutilities.clear_drop_key": "Clear drop",
+      "key.moreutilities.clear_drop_key": "Очистка дропа",
       "gamerule.clearDropLightningEffect": "Эффект молнии при очистке дропа",
-      "key.moreutilities.clear_drop_keyОчитсти": "Очистка дропа",
       "gamerule.autoTimeSetDay.description": "Автоматически устанавливает игровое время в день (1000)",
       "key.moreutilities.time_set_day_key": "Установить игровое время в день (1000)",
       "gamerule.autoWeatherClear.description": "Автоматически устанавливает погоду на ясную (clear)",
@@ -252,7 +251,7 @@
   "workspaceSettings": {
     "modid": "moreutilities",
     "modName": "MoreUtilities",
-    "version": "1.0.0-1.16.5",
+    "version": "1.0.0-1.19.2",
     "description": "Utility mod for Minecraft: Java Edition. Developed by rorosin",
     "author": "More Mods, Anton Rosin Dev.",
     "websiteURL": "https://github.com/MoreMods/MoreUtilities",
@@ -263,7 +262,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.19.2",
     "credits": "More Mods, Anton Rosin Dev.",
     "modElementsPackage": "ru.ardev.moreutilities",
     "lockBaseModFiles": false

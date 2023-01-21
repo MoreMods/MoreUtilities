@@ -1,9 +1,8 @@
 {
-  "gamerule.clearDropLightningEffect.description": "Если  true, то при использовании команды /cleardrop, появляется эффект молнии",
+  "gamerule.clearDropLightningEffect.description": "Если true, то при использовании команды /cleardrop, появляется эффект молнии",
   "gamerule.autoTimeSetDay": "Авто /time set day",
-  "key.moreutilities.clear_drop_key": "Clear drop",
+  "key.moreutilities.clear_drop_key": "Очистка дропа",
   "gamerule.clearDropLightningEffect": "Эффект молнии при очистке дропа",
-  "key.moreutilities.clear_drop_keyОчитсти": "Очистка дропа",
   "gamerule.autoTimeSetDay.description": "Автоматически устанавливает игровое время в день (1000)",
   "key.moreutilities.time_set_day_key": "Установить игровое время в день (1000)",
   "gamerule.autoWeatherClear.description": "Автоматически устанавливает погоду на ясную (clear)",

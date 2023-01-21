@@ -95,12 +95,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/dark_oak_sign": {
-    "criteria": {
-      "has_dark_oak_planks": "2023-01-21 12:18:45 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
       "in_water": "2021-09-25 15:03:10 +0300"
@@ -121,10 +115,9 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:badlands_plateau": "2021-09-25 13:14:21 +0300",
-      "minecraft:desert": "2021-09-25 13:11:32 +0300",
       "minecraft:badlands": "2021-09-25 13:11:52 +0300",
       "minecraft:dark_forest": "2023-01-21 12:19:21 +0300",
+      "minecraft:desert": "2021-09-25 13:11:32 +0300",
       "minecraft:plains": "2021-09-25 13:11:05 +0300"
     },
     "done": false
@@ -135,5 +128,5 @@
     },
     "done": true
   },
-  "DataVersion": 2586
+  "DataVersion": 3120
 }
