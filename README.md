@@ -1,4 +1,4 @@
-![MoreUtilities mod logo](/img/MoreUtilities-logo.png)
+<img style="width: 50%;" alt="Mod logo" src="https://github.com/MoreMods/MoreUtilities/blob/8d9f88f542e5fc14d85831f046220329159e18a2/img/MoreUtilities-logo.png">
 # MoreUtilities
 Mod that adds more utilities to Minecraft:
 
