@@ -1,5 +1,5 @@
 # MoreUtilities
-<img style="width: 50%;" alt="Mod logo" src="https://github.com/MoreMods/MoreUtilities/blob/8d9f88f542e5fc14d85831f046220329159e18a2/img/MoreUtilities-logo.png">
+<img alt="Mod logo" src="https://github.com/MoreMods/MoreUtilities/blob/0a53b5e871e3a3dd4e261e3561cc1f59f2a23b98/img/MoreUtilities-logo-small.png">
 
 **Внимание! Если вы видите этот мод на tlmods.org, то лучше перейдите на оригинальный источник (https://github.com/MoreMods/MoreUtilities) и скачайте файл оттуда, т. к. на tlmods скорее всего размещена неактуальная или даже зараженная вирусом версия.**
 
